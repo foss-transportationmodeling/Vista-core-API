@@ -1,0 +1,86 @@
+﻿Build started 3/13/2015 3:59:14 PM.
+     1>Project "C:\Users\Vanya\Documents\Visual Studio 2012\Projects\CarDetect\CarDetect\CarDetect.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\Vanya\Documents\Work\opencv\buildv4\install\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt carCounter.cpp
+         carCounter.cpp
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(59): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : see declaration of 'itoa'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(62): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : see declaration of 'itoa'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(65): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(66): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(67): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : see declaration of 'itoa'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(69): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(70): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(72): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(73): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(79): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(80): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(85): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(86): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(87): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(88): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(89): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(90): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(91): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(92): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(93): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(94): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(95): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(182) : see declaration of 'strncat'
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(130): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(174): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(176): error C2065: 'val' : undeclared identifier
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(224): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(225): error C2065: 'val' : undeclared identifier
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(228): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(256): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(259): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(296): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(343): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(379): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(385): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(392): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(392): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(398): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(405): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(405): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(412): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(419): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(424): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(434): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(436): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(451): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(453): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(470): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(473): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(476): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(478): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(480): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\vanya\documents\visual studio 2012\projects\cardetect\cardetect\carcounter.cpp(597): warning C4018: '<' : signed/unsigned mismatch
+     1>Done Building Project "C:\Users\Vanya\Documents\Visual Studio 2012\Projects\CarDetect\CarDetect\CarDetect.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.81
