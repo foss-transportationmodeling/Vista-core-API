@@ -3,6 +3,7 @@
 
 #include "carCounter.h"
 
+void runACounter(int id);
 int runWrapper();
 
 #endif

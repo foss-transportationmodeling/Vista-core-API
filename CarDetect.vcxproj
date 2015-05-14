@@ -78,13 +78,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdaptiveMedianBGS.cpp" />
     <ClCompile Include="carCounter.cpp" />
+    <ClCompile Include="DPAdaptiveMedianBGS.cpp" />
+    <ClCompile Include="FrameDifferenceBGS.cpp" />
+    <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="runWrapper.cpp" />
     <ClCompile Include="sqlite3.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdaptiveMedianBGS.h" />
+    <ClInclude Include="Bgs.h" />
+    <ClInclude Include="BgsParams.h" />
     <ClInclude Include="carCounter.h" />
+    <ClInclude Include="DPAdaptiveMedianBGS.h" />
+    <ClInclude Include="FrameDifferenceBGS.h" />
+    <ClInclude Include="IBGS.h" />
+    <ClInclude Include="Image.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="proxy.cpp" />
     <ClInclude Include="proxy.h" />

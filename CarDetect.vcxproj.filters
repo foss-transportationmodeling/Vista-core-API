@@ -27,15 +27,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AdaptiveMedianBGS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DPAdaptiveMedianBGS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameDifferenceBGS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="carCounter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sqlite3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="proxy.cpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="proxy.h">
@@ -45,6 +54,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptiveMedianBGS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BgsParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DPAdaptiveMedianBGS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IBGS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameDifferenceBGS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
