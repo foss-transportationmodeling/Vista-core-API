@@ -39,6 +39,7 @@
 
 # Python Files
 *.py
+*.i
 
 # sqlite DB files
 *.db

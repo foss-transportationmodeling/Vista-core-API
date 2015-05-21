@@ -48,16 +48,16 @@
 #include "FrameDifferenceBGS.h"
 
 /* Frame datatype */
-/* Holistic reperesentation of all the objects captured in the given frame. */ 
+/* Holistic representation of all the objects captured in the given frame. */ 
 struct Frame
 {
-	// Geometric describition
+	// Geometric description
 	cv::vector<cv::vector<cv::Point>> contour;
 	cv::vector<cv::Rect> boundRect;
 	cv::vector<cv::Point2f> center;
 	cv::vector<float> radius;
 	
-	// Instanious metrics (based on current frame and the last)  
+	// Instantaneous metrics (based on current frame and the last)  
 	cv::vector<double> velocity;
 	cv::vector<double> velocityX;
 	cv::vector<double> velocityY;
@@ -83,7 +83,7 @@ struct Frame
 };
 
 /* Object datatype */
-/* Repersentation of all objects captured in the footage. */
+/* Representation of object. */
 struct Object
 {	
 	// Target data
@@ -357,7 +357,7 @@ public:
 	 *  startRegion:		 Set points for start Region.
 	 *  endRegion:			 Set points for end Region.
 	   
-	   Other parameters are settings for displaying if online mode is choosen.
+	   Other parameters are settings for displaying if online mode is chosen.
 	 */
 	void run(int bufferSize, int minObjectSizeDay, int minObjectSizeNight, int skip, int learningTime, 
 		char fileName[100], char saveImgTo[200], char dataBase[200], 
