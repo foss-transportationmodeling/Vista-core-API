@@ -38,8 +38,24 @@
 *.avi
 
 # Python Files
+*.pyc
 *.py
 *.i
 
 # sqlite DB files
 *.db
+
+# misc
+car_counter_db
+*.cxx
+*.props
+
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+*.log
+*.tlog
+*.idb
+*.pdb
+*.lastbuildstate
