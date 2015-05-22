@@ -35,13 +35,12 @@
 #include <ctime>
 #include <thread>
 #include <limits>
+#include <vector>
+#include <queue> 
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/opencv.hpp>
-
-#include <vector>
-#include <queue> 
 
 #include "sqlite3.h" 
 #include "DPAdaptiveMedianBGS.h"
@@ -147,12 +146,15 @@ struct Object
  * carCounter will keep table data updated as the algorithm
  * runs. 
  *
+ * note: Anything marked with (*) is specific to night time mode only.
+ *
  * while(true)
  *	- obtainframe < (opencv)
+ *		- obtainBoundBoxes
  *  - createFrame
  *  - threshold   < (opencv)
  *  - selectBackgroundSubtraction																
- *		- MOG2 < (opencv) || - Adaptive Median < (BGS) || - FrameDifference < (BGS)				
+ *		- MOG2 < (opencv) || - Adaptive Median < (BGS) || - (*) FrameDifference < (BGS)				
  *	- dilate      < (opencv)
  *  - erode       < (opencv)
  *  - medianblur  < (opencv) 
@@ -170,6 +172,7 @@ struct Object
  *			- histogramClacAndFindStd
  *				- calcHistogram
  *				- findStd
+ *		- (*) detectCarBoxForNight
  *  - drawResult
  *
  */
@@ -316,7 +319,7 @@ private:
 								cv::vector<cv::Point> endRegion);
 	/* Custom Utility */
 
-	int carCounter::obtainBoundBoxes(cv::vector<cv::vector<cv::Point>> &contours,cv::vector<cv::vector<cv::Point>> &contours_poly, 
+	int obtainBoundBoxes(cv::vector<cv::vector<cv::Point>> &contours,cv::vector<cv::vector<cv::Point>> &contours_poly, 
 									  cv::vector<cv::Rect> &boundRect,
 									  cv::vector<cv::Point2f> &center,cv::vector<float> &radius, int minObjectSize);
 
@@ -338,17 +341,18 @@ public:
 	carCounter(int expID,bool night);
 
 	/* Start the counter
+	 *  NAME:				:DESCRIPTION																															:UNITS (IF APPLICABLE)
 	 *  bufferSize:			 Local workspace (how many of the latest frames of the video to store)
-	 *  minObjectSizeDay:	 Minimum required size for an object to be considered (ignore things that are too small to be a car)
-	 *  minObjectSizeNight:	 Minimum required size for an object to be considered (ignore things that are too small to be a headlight) 
-	 *  skip:				 Skips frames from video (potential performance improvement) 
-	 *  learningTime:		 Give time for BGS to settle 
+	 *  minObjectSizeDay:	 Minimum required size for an object to be considered (ignore things that are too small to be a car)									Pixels Squared
+	(*) minObjectSizeNight:	 Minimum required size for an object to be considered (ignore things that are too small to be a headlight)								Pixels Squared
+	 *  skip:				 Skips frames from video (potential performance improvement)																			Frames
+	 *  learningTime:		 Give time for BGS to settle																											Frames
 	 *  fileName:			 Video filename that you want run the algorithm on.
 	 *  saveImgTo:			 Directory in which cropped images of counted cars will be saved.
 	 *  dataBase			 The local sqlite database to which you want to save data. (absolute location)
-	 *  fps:				 Ignore this for now (set the frames per second of this video. Can be used to track how many seconds into the video the car is detect)
-	 *  expectedDist:		 Tells the algorithm the threshold on how far along in pixels the object will be next frame.
-	 *  horizontalBandWidth: If looking for a sibling headlight object this tells the algorithm how wide the search area band should be horizontally.
+	 *  fps:				 Ignore this for now (set the frames per second of this video. Can be used to track how many seconds into the video the car is detect)  Frames/second
+	 *  expectedDist:		 Tells the algorithm the threshold on how far along in pixels the object will be next frame.											Pixels
+	 *  horizontalBandWidth: If looking for a sibling headlight object this tells the algorithm how wide the search area band should be horizontally.				Pixels
 	 *  online:				 Whether to display frames
 	 *  ppt,ppt2,npt,npt2:	 Set an overlay mask on the video (optional)
 	 *  useMOG2:			 Choose between MOG2 or Adaptive Median for background subtraction 
@@ -356,8 +360,10 @@ public:
 	 						 Check MOG2 for details. 
 	 *  startRegion:		 Set points for start Region.
 	 *  endRegion:			 Set points for end Region.
-	   
+	 
 	   Other parameters are settings for displaying if online mode is chosen.
+	 *
+	 * note: Anything marked with (*) is specific to night time mode only.
 	 */
 	void run(int bufferSize, int minObjectSizeDay, int minObjectSizeNight, int skip, int learningTime, 
 		char fileName[100], char saveImgTo[200], char dataBase[200], 

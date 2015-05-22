@@ -27,6 +27,13 @@ along with BGSLibrary.  If not, see <http://www.gnu.org/licenses/>.
 *
 ******************************************************************************/
 
+/* Modified by Ivan Pozdnyakov
+ *
+ * The code modification makes sure that pixels belonging to the background model
+ * never update as long as they are in the background model.
+ *
+ */
+
 #include <iostream>
 #include <stdlib.h>
 #include <cmath>

@@ -1,3 +1,9 @@
-#include "proxy.h"
+#ifndef RUNWRAPPER_H
+#define RUNWRAPPER_H
 
-int main();
+#include "carCounter.h"
+
+void runACounter(int id);
+int runWrapper();
+
+#endif

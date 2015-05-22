@@ -14,6 +14,15 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with BGSLibrary.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+/* Modified by Ivan Pozdnyakov
+ *
+ * The code modification makes sure the background model is saved in img_bgmodel and is useable 
+ * by the caller of process. Also the expected location of FrameDifferenceBGS.xml has been changed
+ * to be the local directory instead of BGS library folder.
+ *
+ */
+
 #include "FrameDifferenceBGS.h"
 
 FrameDifferenceBGS::FrameDifferenceBGS() : firstTime(true), enableThreshold(true), threshold(15), showOutput(true)
